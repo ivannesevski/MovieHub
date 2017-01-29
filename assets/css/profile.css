@@ -1,0 +1,77 @@
+/*---------- PROFILE CONTENT ----------*/
+.main-container .profile-nav {
+  width: 10%;
+  height: 100%;
+  float: left;
+  background-color: #BFCAC9;
+  border-top: 1px solid #BFBFBF;
+  border-bottom: 1px solid #BFBFBF;
+  border-left: 1px solid #BFBFBF;
+}
+
+.profile-nav .nav-list {
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list .nav-item,
+.nav-list .signout-btn {
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+}
+
+.nav-item:hover {
+  color: white;
+  background-color: #6C6E6D;
+}
+
+.signout-btn .signout {
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+
+.nav-list .selected {
+  color: white;
+  background-color: #6C6E6D;
+}
+
+.main-container .container {
+  width: 90%;
+  height: 100%;
+  float: left;
+  background-color: white;
+  border-top: 1px solid #BFBFBF;
+  border-bottom: 1px solid #BFBFBF;
+  border-right: 1px solid #BFBFBF;
+  padding: 0 10px;
+}
+
+.account-content,
+.privacy-content {
+  display: none;
+}
+
+.wrapper .float {
+  float: left;
+}
+
+.wrapper .first {
+  padding-right: 15px;
+}
+
+/*---------- FLOAT CLEARING ----------*/
+.wrapper:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.main-container:after {
+  content: '';
+  display: block;
+  clear: both;
+}

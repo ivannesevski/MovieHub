@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>My Movies</title>
+    
+    <link href="../assets/css/base.css" rel="stylesheet">
+    <link href="../assets/css/mymovies.css" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="../assets/scripts/mymovies.js"></script>
+  </head>
+
+  <body>
+    <nav class="top-nav">
+      <div class="top-title">
+        <a class="title" href="/homepage">MovieHub</a>
+      </div>
+      <div class="top-menu">
+        <ul class="menu-list">
+          <li>
+            <a class="menu-item" href="/mymovies"><b>My Movies</b></a>
+          </li>
+          <li>
+            <a class="menu-item" href="/profile">My Account</a>
+          </li>
+          <li class="separator">|</li>
+          <li>
+            <p class="welcome">Welcome, <b>{{ session.username }}</b></p>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="main-container">
+      <div class="container">
+        <h1 class="list-label no-margin"><u>Movie List</u></h1>
+        <ul class="movie-list"></ul>
+        <div class="not-found">
+          <p class="no-margin">You have no movies added to your list.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

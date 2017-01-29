@@ -1,0 +1,34 @@
+body {
+  display: table;
+}
+
+/*---------- SIGNUP CONTENT ----------*/
+.center-container {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.signup-content {
+  width: 30%;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #BFBFBF;
+  background-color: white;
+}
+
+.link-btn {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+}
+
+.signup-title {
+  text-align: center;
+}
+
+input {
+  width: 50%;
+}

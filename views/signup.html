@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Sign up</title>
+    
+    <link href="../assets/css/base.css" rel="stylesheet">
+    <link href="../assets/css/signup.css" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div class="center-container">
+      <div class="signup-content">
+        <a href="/" class="link-btn">&lArr;</a>
+        <h1 class="signup-title no-margin">MovieHub</h1>
+        <form action="/signup" method="post" class="signup-info">
+          <div class="form-element">
+            <p class="no-margin">Username</p>
+            <input type="text" name="username" required></input>
+            {% if username_err %}
+            <span class="error">{{ username_err }}</span>
+            {% endif %}
+          </div>
+          <div class="form-element">
+            <p class="no-margin">Password</p>
+            <input type="password" name="password" required></input>
+          </div>
+          <div class="form-element">
+            <p class="no-margin">Password (Confirmation)</p>
+            <input type="password" name="password_confirmation"></input>
+            {% if confirm_err %}
+            <span class="error">{{ confirm_err }}</span>
+            {% endif %}
+          </div>
+          
+          <button type="submit" class="btn">Sign up</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

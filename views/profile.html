@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Profile</title>
+    
+    <link href="../assets/css/base.css" rel="stylesheet">
+    <link href="../assets/css/profile.css" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="../assets/scripts/profile.js"></script>
+  </head>
+
+  <body>
+    <nav class="top-nav">
+      <div class="top-title">
+        <a class="title" href="/homepage">MovieHub</a>
+      </div>
+      <div class="top-menu">
+        <ul class="menu-list">
+          <li>
+            <a class="menu-item" href="/mymovies">My Movies</a>
+          </li>
+          <li>
+            <a class="menu-item" href="/profile"><b>My Account</b></a>
+          </li>
+          <li class="separator">|</li>
+          <li>
+            <p class="welcome">Welcome, <b>{{ session.username }}</b></p>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="main-container">
+      <nav class="profile-nav">
+        <ul class="nav-list">
+          <li id="general-btn" class="nav-item selected">Profile</li>
+          <li id="account-btn" class="nav-item">Account</li>
+          <li id="privacy-btn" class="nav-item">Privacy</li>
+          <li class="signout-btn"><a class="signout" href="/signout">Sign Out</a></li>
+        </ul>
+      </nav>
+      <div class="container">
+        <div class="general-content">
+          <form action="/updategeneral" method="post" class="general-info">
+            <div class="form-element wrapper">
+              <div class="float first">
+                <p class="no-margin">First Name</p>
+                <input id="first-name" type="text" name="firstName"></input>
+              </div>
+              <div class="float">
+                <p class="no-margin">Last Name</p>
+                <input id="last-name" type="text" name="lastName"></input>
+              </div>
+            </div>
+            
+            <div class="form-element">
+              <p class="no-margin">Gender</p>
+              <select id="gender" class="small-padding" name="gender">
+                <option value="default"></option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            
+            <div class="form-element">
+              <p class="no-margin">Date of Birth</p>
+              <input id="DoB" type="date" class="small-padding" name="DoB"></input>
+            </div>
+            
+            <div class="form-element">
+              <p class="no-margin">About</p>
+              <textarea id="about" name="about" rows="8" cols="70"></textarea>
+            </div>
+            
+            <button type="submit" class="btn">Save</button>
+          </form>
+        </div>
+        <div class="account-content">
+          <form class="account-info">
+            <div class="form-element">
+              <p class="no-margin">Old Password</p>
+              <input type="password" name="oldPassword"></input>
+              <span class="error"></span>
+            </div>
+            <div class="form-element">
+              <p class="no-margin">New Password</p>
+              <input type="password" name="newPassword"></input>
+            </div>
+            
+            <button type="submit" class="btn">Update</button>
+          </form>
+        </div>
+        <div class="privacy-content">
+          <form action="/updateprivacy" method="post" class="privacy-info">
+            <div class="form-element">
+              <input id="private" type="checkbox" name="private">Private account</input> 
+            </div>
+          
+            <button type="submit" class="btn">Save</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+body {
+  display: table;
+}
+
+/*---------- LOGIN CONTENT ----------*/
+.center-container {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.login-title {
+  text-align: center;
+}
+
+.login-content {
+  width: 20%;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #BFBFBF;
+  background-color: white;
+}
+
+.login-info {
+  text-align: center;
+}
+
+.error {
+  padding-top: 10px;
+}

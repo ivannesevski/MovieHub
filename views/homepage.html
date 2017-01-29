@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Homepage</title>
+    
+    <link href="../assets/css/base.css" rel="stylesheet">
+    <link href="../assets/css/homepage.css" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="../assets/scripts/homepage.js"></script>
+  </head>
+
+  <body>
+    <nav class="top-nav">
+      <div class="top-title">
+        <a class="title" href="/homepage"><b>MovieHub</b></a>
+      </div>
+      <div class="top-menu">
+        <ul class="menu-list">
+          <li>
+            <a class="menu-item" href="/mymovies">My Movies</a>
+          </li>
+          <li>
+            <a class="menu-item" href="/profile">My Account</a>
+          </li>
+          <li class="separator">|</li>
+          <li>
+            <p class="welcome">Welcome, <b>{{ session.username }}</b></p>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="main-container">
+      <div class="container">
+        <div class="search-bar">
+          <form class="search-info">
+            <p class="no-margin">Search for movies by title or show all of them.</p>
+            <div class="form-element">
+              <input type="text" name="title"></input>
+              <button type="submit" class="btn">Search</button>
+              <span class="btn-separator">|</span>
+              <button id="show-all" type="button" class="btn">Show All</button>
+            </div>
+          </form>         
+        </div>
+        <div class="search-result">
+          <ul class="movie-list"></ul>
+          <div class="not-found">
+            <p class="no-margin">Sorry, the movie you are searching for could not be found.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

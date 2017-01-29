@@ -1,0 +1,26 @@
+[
+  {
+    "username": "admin1",
+    "password" : "admin",
+    "firstName": "",
+    "lastName": "",
+    "gender": "",
+    "DoB": "",
+    "about": "",
+    "private": false,
+    "movielist": [],
+    "isAdmin": true	
+  },
+  {
+    "username": "user1",
+    "password" : "user",
+    "firstName": "Janet",
+    "lastName": "Smith",
+    "gender": "Female",
+    "DoB": "1990-04-10",
+    "about": "My favourite genre is horror.",
+    "private": false,
+    "movielist": [],
+    "isAdmin": false
+  }
+]

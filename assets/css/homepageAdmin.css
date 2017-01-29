@@ -1,0 +1,29 @@
+/*---------- ADMIN HOMEPAGE CONTENT ----------*/
+.main-container .add-movie-container {
+  width: 50%;
+  height: 100%;
+  float: left;
+  padding: 10px;
+  border: 1px solid #BFBFBF;
+  background-color: white;
+}
+
+.main-container .add-user-container {
+  width: 50%;
+  height: 100%;
+  float: left;
+  padding: 10px;
+  border: 1px solid #BFBFBF;
+  background-color: white;
+}
+
+.add-label {
+  height: 5%;  
+}
+
+/*---------- FLOAT CLEARING ----------*/
+.main-container {
+  content: '';
+  display: block;
+  clear: both;
+}

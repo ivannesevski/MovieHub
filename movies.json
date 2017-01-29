@@ -1,0 +1,76 @@
+[{
+        "title": "gone with the wind",
+        
+        "year": "1940",
+        
+        "rating": "PG-13",
+            
+        "length": "221",
+
+        "genre": "Historical Romance",
+
+        "director": "Victor Fleming",
+    
+        "stars": "Vivien Leigh, Clark Gable, Lesie Howard, Olivia de Havilland"
+},
+{
+        "title": "citizen kane",
+        
+        "year": "1941",
+        
+        "rating": "PG-13",
+            
+        "length": "119",
+
+        "genre": "Mystery Drama",
+
+        "director": "Orson Welles",
+    
+        "stars": "Orson Welles, Joseph Cotten, Dorothy Comingore"
+},
+{
+        "title": "doctor strange",
+        
+        "year": "2016",
+        
+        "rating": "PG-13",
+            
+        "length": "115",
+
+        "genre": "Action, Adventure, Fantasy",
+
+        "director": "Scott Derrickson",
+    
+        "stars": "Benedict Cumberbatch, Chiwetel Ejiofor, Rachel McAdams"
+},
+{
+        "title": "inception",
+        
+        "year": "2010",
+        
+        "rating": "PG-13",
+            
+        "length": "148",
+
+        "genre": "Action, Adventure, Sci-Fi",
+
+        "director": "Christopher Nolan",
+    
+        "stars": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page"
+},
+{
+        "title": "zootopia",
+        
+        "year": "2016",
+        
+        "rating": "PG",
+            
+        "length": "108",
+
+        "genre": "Animation, Adventure, Comedy",
+
+        "director": "Byron Howard",
+    
+        "stars": "Ginnifer Goodwin, Jason Bateman, Idris Elba"
+}
+]

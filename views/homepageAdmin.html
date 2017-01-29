@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Homepage</title>
+    
+    <link href="../assets/css/base.css" rel="stylesheet">
+    <link href="../assets/css/homepageAdmin.css" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="../assets/scripts/homepageAdmin.js"></script>
+  </head>
+
+  <body>
+    <nav class="top-nav">
+      <div class="top-title">
+        <a class="title" href="/adminhome"><b>MovieHub</b></a>
+      </div>
+      <div class="top-menu">
+        <ul class="menu-list">
+          <li>
+            <a class="menu-item signout-btn" href="/signout">Sign Out</a>
+          </li>
+          <li class="separator">|</li>
+          <li>
+            <p class="welcome">Welcome, <b>Admin</b></p>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="main-container">
+      <div class="add-movie-container">
+        <div class="add-label">
+          <h3 class="no-margin"><u>Add a movie to the database.</u></h3>
+        </div>
+        <div class="add-movie">
+          <form class="movie-info">
+            <div class="form-element">
+              <p class="no-margin">Title</p>
+              <input type="text" name="title" required>
+            </div>
+            <div class="form-element">
+              <p class="no-margin">Year</p>
+              <input type="number" name="year" required>
+            </div>
+            <div class="form-element">
+              <p class="no-margin">Rating (PG-13, R, etc.)</p>
+              <input type="text" name="rating" required>
+            </div>
+            <div class="form-element">
+              <p class="no-margin">Length (in minutes)</p>
+              <input type="number" name="length" required>
+            </div>
+            <div class="form-element">
+              <p class="no-margin">Genre</p>
+              <input type="text" name="genre" required>
+            </div>
+            <div class="form-element">
+              <p class="no-margin">Director</p>
+              <input type="text" name="director" required>
+            </div>
+            <div class="form-element">
+              <p class="no-margin">Stars</p>
+              <input type="text" name="stars" required>
+            </div>
+            
+            <button type="submit" class="btn">Add Movie</button>
+          </form>
+        </div>
+      </div>
+      <div class="add-user-container">
+      <div class="add-label">
+          <h3 class="no-margin"><u>Add a user to the database.</u></h3>
+        </div>
+        <div class="add-user">
+          <form class="user-info">
+            <div class="form-element">
+              <p class="no-margin">Username</p>
+              <input type="text" name="username" required>
+            </div>
+            <div class="form-element">
+              <p class="no-margin">Password</p>
+              <input type="text" name="password" required>
+            </div>
+            
+            <button type="submit" class="btn">Add User</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
